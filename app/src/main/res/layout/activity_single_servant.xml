@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/single_servant_room"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/team_defy"
+        android:scaleType="centerCrop"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/SCView"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/SSTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="返回"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:onClick="back"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="战术少女"
+                android:textColor="@android:color/white"
+                android:textSize="15pt" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:onClick="previousPage"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/lswitch"/>
+
+            <Button
+                android:onClick="nextPage"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/rswitch"/>
+
+            <ImageView
+                android:id="@+id/Photo_Show"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp" />
+        </RelativeLayout>
+
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/NameView"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@android:color/black"
+                            android:text="从者名称"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/KindView"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@android:color/black"
+                            android:gravity="center"
+                            android:text="枪种"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/StarView"
+                            android:background="@android:color/black"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="星级"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/AttackView"
+                            android:background="@android:color/black"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="伤害"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/BingoView"
+                            android:background="@android:color/black"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:gravity="center"
+                            android:text="命中"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/EvadeView"
+                            android:background="@android:color/black"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:gravity="center"
+                            android:text="回避"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/SpeedView"
+                            android:background="@android:color/black"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:gravity="center"
+                            android:text="射速"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/HPView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@android:color/black"
+                            android:textColor="@android:color/white"
+                            android:gravity="center"
+                            android:text="生命"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/PaintView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@android:color/black"
+                            android:textColor="@android:color/white"
+                            android:gravity="center"
+                            android:text="绘师"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/CVView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@android:color/black"
+                            android:textColor="@android:color/white"
+                            android:gravity="center"
+                            android:text="CV"
+                            android:textSize="18dp" />
+
+
+
+                        <TextView
+                            android:id="@+id/GetView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@android:color/black"
+                            android:textColor="@android:color/white"
+                            android:gravity="center"
+                            android:text="入手途径"
+                            android:textSize="18dp" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="7">
+
+                        <TextView
+                            android:id="@+id/servant_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:text="233333333333333333333333"/>
+
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:id="@+id/servant_element"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="23333"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:id="@+id/servant_star"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="23333"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:id="@+id/servant_atk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="23333"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:id="@+id/servant_bingo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="23333"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:id="@+id/servant_evade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="23333"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:id="@+id/servant_speed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="23333"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:id="@+id/servant_hp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="23333"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:id="@+id/servant_painter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="23333"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:id="@+id/servant_cv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="23333"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:id="@+id/servant_htg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="23333"
+                            android:textSize="18dp" />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/mmmmm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@android:color/black"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:text="技能"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:padding="1dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/servant_skill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="23333"
+                    android:textSize="18dp" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/effectView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="影响格"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:background="@android:color/black"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:padding="10px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/effectdilag"/>
+
+                    <TextView
+                        android:id="@+id/effect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:text="2333333333"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    </RelativeLayout>
+

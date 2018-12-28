@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BattleGirls">
+        <item>柯尔特左轮</item>
+        <item>M1911</item>
+    </string-array>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".BattleMapRoom">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/battle_background"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/STitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="选择战役"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textSize="35dp"
+                    android:background="@android:color/black"/>
+
+                <Button
+                    android:onClick="back"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/white"
+                    android:text="返回"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/battle0"
+                android:text="第零战役"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/battle1"
+                android:onClick="onClickM_1"
+                android:text="第一战役"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/battle2"
+                android:text="第二战役"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/battle3"
+                android:text="第三战役"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/battle4"
+                android:text="第四战役"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/battle5"
+                android:text="第五战役"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/battle6"
+                android:text="第六战役"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/battle7"
+                android:text="第七战役"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/battle8"
+                android:text="第八战役"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Button
+                android:id="@+id/battle9"
+                android:text="第九战役"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/battle10"
+                android:text="第十战役"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </RelativeLayout>
+
+

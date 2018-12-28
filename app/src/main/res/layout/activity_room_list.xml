@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:context="com.example.kanno.fategrandtips.RoomList"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ar_team"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/Button_Servant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="图鉴"
+                android:textSize="40dp"
+                android:onClick="onClickServant"/>
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/Button_Craft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="装备"
+                android:textSize="40dp"
+                />
+            <Button
+                android:onClick="onClickSingular"
+                android:layout_marginTop="20dp"
+                android:id="@+id/Button_Singular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="作战地图"
+                android:textSize="40dp"/>
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/Strategy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="攻略"
+                android:textSize="40dp"
+                />
+            <Button
+                android:onClick="onClickCounter"
+                android:layout_marginTop="20dp"
+                android:id="@+id/Counter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="计算器"
+                android:textSize="40dp"/>
+
+            <Button
+                android:onClick="GoConstruct"
+                android:layout_marginTop="20dp"
+                android:id="@+id/Produce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="公式"
+                android:textSize="40dp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    </RelativeLayout>
